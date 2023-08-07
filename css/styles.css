@@ -1,0 +1,183 @@
+body {
+  font-family: 'Press Start 2P', cursive; 
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #000; 
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a { 
+  color: #ffffff;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+.game-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .game-media {
+    gap: 10px;
+  }
+}
+
+.newsletter {
+  margin-top: 30px;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.newsletter button {
+  background-color: #e74c3c; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #2bc05d; 
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f7f7f7; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-card .date {
+  color: #777;
+}
+
+.review-card .rating {
+  color: gold;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+      font-size: 24px;
+  }
+
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  .newsletter input[type="email"] {
+      font-size: 14px;
+  }
+
+  .newsletter button {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}
