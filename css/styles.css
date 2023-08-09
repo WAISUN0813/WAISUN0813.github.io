@@ -65,11 +65,6 @@ main {
   gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .game-media {
-    gap: 10px;
-  }
-}
 
 .newsletter {
   margin-top: 30px;
@@ -128,12 +123,6 @@ main {
   color: gold;
 }
 
-@media screen and (max-width: 768px) {
-  .reviews {
-    grid-template-columns: 1fr;
-  }
-}
-
 .about {
   background-color: #f9f9f9;
   padding: 20px;
@@ -150,16 +139,6 @@ main {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
-}
-
-@media screen and (max-width: 400px) {
-  .about h2 {
-    font-size: 20px;
-  }
-
-  .about p {
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -180,4 +159,18 @@ main {
       padding: 8px 16px;
       font-size: 14px;
   }
+
+  .game-media img {
+    width: 350px;
+
+  }
+
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+  
 }
